@@ -1,0 +1,27 @@
+<h1>Angular 7/Flexmonster</h1>
+
+<table>
+  <tr>
+    <td style="width: 800px;">
+      <fm-pivot
+        #pivot
+        [componentFolder]="'https://cdn.flexmonster.com/'"
+        [toolbar]="true"
+        [width]="800"
+        [height]="500"
+        [report]="pivotReport"
+        [customizeCell]="onCustomizeCell"
+        [licenseKey]="'Z7UA-10H038-4F116J-2Y2T43-6T605R-6B3G3P-1H5K6D-210L0K-425U4O-6I606K-391B'"
+        (ready)="onPivotReady($event)"
+        (reportcomplete)="onReportComplete($event)"
+      >
+      </fm-pivot>
+    </td>
+    <td style="width: 900px;">
+      <div
+        id="googlechart-container-1"
+        style="width:900px;height:750;padding-top:20px;"
+      ></div>
+    </td>
+  </tr>
+</table>
